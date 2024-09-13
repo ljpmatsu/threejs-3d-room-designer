@@ -8890,54 +8890,54 @@
                   "3d" === l.props.viewMode
                     ? {
                         font: "fa fa-border-all",
-                        tooltip: "Show 2D Floor Planner",
+                        tooltip: "Pokaż rozrys pomieszczeń 2D",
                         callback: l.props.onShow2DPlanner,
                       }
                     : {
                         font: "fa fa-cube",
-                        tooltip: "Show 3D View",
+                        tooltip: "Pokaż widok 3D",
                         callback: l.props.onShow3DViewClicked,
                       },
                   null,
                   {
                     toggled: t,
                     font: t ? "fas fa-unlock" : "fas fa-lock",
-                    tooltip: t ? "Unlock Scene" : "Lock Scene",
+                    tooltip: t ? "Odblokuj przemieszczanie" : "Zablokuj przemieszczanie",
                     callback: l.handleToggleLock,
                   },
                   {
                     toggled: n,
                     font: "fa fa-ruler-combined",
-                    tooltip: "".concat(n ? "Show" : "Hide", " Dimensions"),
+                    tooltip: "".concat("Pokazywanie wymiarów " , n ? "włączone" : "wyłączone"),
                     callback: l.handleToggleDimensions,
                   },
                   {
                     toggled: a,
                     font: "fas fa-magnet",
-                    tooltip: "Snap Objects",
+                    tooltip: "".concat("Przyciąganie obiektów " , a ? "włączone" : "wyłączone"),
                     callback: l.handleToggleSnap,
                   },
                   {
                     toggled: i,
                     font: "far fa-square",
-                    tooltip: "X-Ray Wall",
+                    tooltip: "".concat("Przezroczyste ściany " , i ? "włączone" : "wyłączone"),
                     callback: l.handleToggleXRay,
                   },
                   null,
                   {
                     font: "fas fa-cart-plus",
-                    tooltip: "Add Product",
+                    tooltip: "Dodaj produkt",
                     callback: l.props.onAddProductClicked,
                   },
                   null,
                   {
                     font: "fa fa-save",
-                    tooltip: "Save",
+                    tooltip: "Zapisz",
                     callback: l.props.onSaveClicked,
                   },
                   {
                     font: "fas fa-upload",
-                    tooltip: "Load",
+                    tooltip: "Załaduj",
                     callback: l.props.onLoadClicked,
                   },
                   {
@@ -8949,7 +8949,7 @@
                   {
                     font: "",
                     label: l.state.unit,
-                    tooltip: "Change Unit",
+                    tooltip: "Zmiana jednostek",
                     callback: l.handleUnitChanged,
                   },
                 ];
