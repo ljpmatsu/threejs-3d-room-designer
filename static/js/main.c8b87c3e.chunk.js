@@ -8479,7 +8479,7 @@
                         children: [
                           Object(v.jsx)("h4", {
                             style: { flex: 1, margin: 0 },
-                            children: "Categories",
+                            children: "Kategorie",
                           }),
                           Object(v.jsx)("div", {
                             onClick: this.props.onClose,
@@ -8492,7 +8492,7 @@
                       Object(v.jsx)("div", {
                         children: Object(v.jsx)("input", {
                           className: "search-box",
-                          placeholder: "search",
+                          placeholder: "szukaj",
                           value: this.state.searchKey,
                           onChange: function (t) {
                             return e.setState({ searchKey: t.target.value });
