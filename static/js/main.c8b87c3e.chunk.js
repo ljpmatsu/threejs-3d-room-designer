@@ -2216,10 +2216,11 @@
             e
           );
         })(),
+        
         xe = {
           url: "".concat(
             ee.Configuration.getStringValue("defaultPathPrefix"),
-            "/rooms/textures/marbletiles.jpg"
+            "/rooms/textures/hardwood.png"
           ),
           scale: 4,
         },
